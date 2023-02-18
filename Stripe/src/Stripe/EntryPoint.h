@@ -6,7 +6,10 @@ extern Stripe::Application* Stripe::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	printf("Stripe Engine booted!\n");
+	Stripe::Log::Init();
+
+	ST_CORE_WARN("Initialized Log");
+	ST_INFO("Hello!");
 
 	auto app = Stripe::CreateApplication();
 	app->Run();

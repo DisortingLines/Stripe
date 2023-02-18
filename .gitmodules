@@ -1,0 +1,3 @@
+[submodule "Stripe/vendor/spdlog"]
+	path = Stripe/vendor/spdlog
+	url = https://github.com/gabime/spdlog
